@@ -32,6 +32,7 @@ while(arduino_msg):
     cv2.circle(img_detection,(x,y),5,(255,5,5),-1)
     cv2.imshow('object',img_detection)
     print(f'sent X:{x},Y:{y},Luas:{luas}')
+    com.kirim(x,y)
     if luas>130000:
         print("done")
         break
